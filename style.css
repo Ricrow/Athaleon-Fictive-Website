@@ -16,6 +16,7 @@ header {
   height: 150px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 70px;
   background: rgb(43,33,30);
   background: linear-gradient(90deg, black, rgb(43, 33, 30), black);
@@ -30,10 +31,15 @@ header .navbar {
   position: fixed;
   list-style: none;
   display: flex;
-  right: 70px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  top: 150px;
+  left: 0;
+  background: black;
 }
 header .navbar .nav-item {
-  margin-left: 2em;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -41,7 +47,7 @@ header .navbar .nav-item {
 header .navbar .nav-item .nav-link {
   text-decoration: none;
   color: #D3B69C;
-  text-shadow: 0px 0px 3px #000000, 0px 0px 8px #000000;
+  text-shadow: 0px 0px 1px #fff, 0px 0px 1px #fff;
 }
 
 header .navbar .nav-item .nav-link:hover {
@@ -128,9 +134,6 @@ header .fa-bars {
 /* max-width: 1200px */
 
 @media (max-width: 1200px) {
-  header {
-    height: 150px;
-  }
   header a .logo {
     width: 400px;
   }
@@ -148,6 +151,9 @@ header .fa-bars {
   }
   header a .logo {
     width: 300px;
+  }
+  header .navbar {
+    top: 140px;
   }
   header .navbar .nav-item {
     font-size: 1em;
@@ -173,10 +179,11 @@ header .fa-bars {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(200%);
+    top: 100px;
     bottom: 0;
-    right: 0;
+    left: 200%;
     transition: 0.4s;
+    z-index: 100;
   }
   header .navbar::before {
     content: '';
@@ -193,7 +200,7 @@ header .fa-bars {
     margin-top: 1.5em;
   }
   header .navbar-active {
-    transform: translateX(0%);
+    left: 50%;
     transition: 0.4s;
   }
   header .fa-bars {
