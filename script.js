@@ -8,4 +8,18 @@ const toggleMenu = () => {
   })
 };
 
+const upArrow = () => {
+
+  const upButton = document.getElementById('home-arrow');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight) {
+      upButton.style.display = 'block';
+    } else {
+      upButton.style.display = 'none';
+    }
+  })
+}
+
 toggleMenu();
+upArrow();
