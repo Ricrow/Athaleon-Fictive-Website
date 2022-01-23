@@ -8,8 +8,6 @@
 
 body {
   position: relative;
-  width: 100%;
-  height: auto;
 }
 
 #home, #album {
@@ -17,7 +15,17 @@ body {
   height: 100vh;
   background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(43,33,30,0.7) 50%, rgba(0,0,0,0.8) 100%), url(images/steampunk-city.jpg);
   background-position: top;
-  background-size: cover;}
+  background-size: cover;
+}
+
+#home-arrow {
+  position: fixed;
+  font-size: 4em;
+  color: var(--font-color);
+  z-index: 1000000;
+  bottom: 2%;
+  right: 2%;
+}
 
 /* VARIABLES */
 
@@ -132,20 +140,35 @@ header .fa-bars {
 /* ALBUM SECTION */
 
 #album {
+  color: var(--font-color);
+  text-shadow: var(--text-shadow);
+}
+#album h2 {
+  display: flex;
+  justify-content: end;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  font-size: 5em;
+  text-decoration: underline;
+}
+
+.album-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 #album .card {
+  justify-content: center;
   width: 35%;
+  height: 50%;
   display: flex;
   flex-direction: column;
 }
 
 #album .card img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   margin-bottom: 2em;
 }
 
@@ -159,6 +182,34 @@ header .fa-bars {
   font-weight: bold;
   color: var(--font-color);
   text-shadow: var(--text-shadow);
+  border-radius: 5px;
+}
+
+.album-track {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.album-track h3 {
+  font-size: 4em;
+  padding-bottom: 1.5em;
+}
+
+.album-track ul li {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.album-track ul li a {
+  font-style: italic;
+  color: #af8561;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.album-track ul li a:hover {
+  color: #fff;
 }
 
 
