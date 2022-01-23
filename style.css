@@ -12,10 +12,18 @@ body {
   height: auto;
 }
 
+#home, #album {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(43,33,30,0.7) 50%, rgba(0,0,0,0.8) 100%), url(images/steampunk-city.jpg);
+  background-position: top;
+  background-size: cover;}
+
 /* VARIABLES */
 
 :root {
   --font-color: #D3B69C;
+  --text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000, 0px 0px 6px #000000;
 }
 
 /* HEADER */
@@ -73,11 +81,6 @@ header .fa-bars {
 /* HOME SECTION */
 
 #home {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(43,33,30,0.7) 50%, rgba(0,0,0,0.8) 100%), url(images/steampunk-city.jpg);
-  background-position: top;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +91,7 @@ header .fa-bars {
   margin-top: 4em;
   font-size: 2em;
   color: var(--font-color);
-  text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000, 0px 0px 6px #000000;
+  text-shadow: var(--text-shadow);
 }
 
 #home p {
@@ -96,7 +99,7 @@ header .fa-bars {
   font-size: 4em;
   color: var(--font-color);
   font-weight: bold;
-  text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000, 0px 0px 6px #000000;
+  text-shadow: var(--text-shadow);
 }
 
 #home .video-container {
@@ -126,9 +129,37 @@ header .fa-bars {
   width: calc(100% / 9);
 }
 
+/* ALBUM SECTION */
 
+#album {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#album .card {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
 
+#album .card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+#album .card button {
+  padding: 0.2em;
+  max-width: 100%;
+  background: url(images/rust-texture.jpg);
+  border: none;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--font-color);
+  text-shadow: var(--text-shadow);
+}
 
 
 
