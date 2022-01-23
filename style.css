@@ -148,35 +148,35 @@ header .fa-bars {
 #album h2 {
   display: flex;
   justify-content: end;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  align-items: center;
+  height: 200px;
   padding-right: 1em;
   font-size: 5em;
   text-decoration: underline;
 }
 
 .album-info {
+  height: calc(100vh - 200px);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 #album .card {
   justify-content: center;
-  width: 35%;
-  height: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  margin-right: 5em;
 }
 
 #album .card img {
-  width: 100%;
+  width: 600px;
   margin-bottom: 2em;
 }
 
 #album .card button {
   padding: 0.2em;
-  max-width: 100%;
   background: url(images/rust-texture.jpg);
   border: none;
   font-size: 2.5em;
@@ -188,7 +188,6 @@ header .fa-bars {
 }
 
 .album-track {
-  background: rgba(0, 0, 0, 0.5);
   padding: 2em;
   border-radius: 20px;
 }
@@ -237,6 +236,19 @@ header .fa-bars {
 
 /* MEDIA QUERIES*/
 
+/* max-width: 1362px */
+
+@media (max-width: 1362px) {
+  .album-track h3 {
+    font-size: 3em;
+    padding-bottom: 1.5em;
+  }
+  .album-track ul li {
+    font-size: 1.2em;
+  }
+  
+}
+
 /* max-width: 1200px */
 
 @media (max-width: 1200px) {
@@ -253,6 +265,16 @@ header .fa-bars {
   
   #home p {
     font-size: 3.2em;
+  }
+  .album-track h3 {
+    font-size: 2em;
+  }
+  #album .card img {
+    width: 400px;
+    margin-bottom: 2em;
+  }
+  #album h2 {
+    font-size: 4em;
   }
 }
 
@@ -282,6 +304,25 @@ header .fa-bars {
   }
   #home {
     padding-top: 5em;
+  }
+  .album-info {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .album-track {
+    background: rgba(0,0,0,0.74);
+    width: 400px;
+  }
+  .album-track h3 {
+    font-size: 1.5em;
+  }
+  #album .card {
+    margin: 0;
+  }
+  #album .card img {
+    width: 400px;
+    margin-bottom: 2em;
   }
 }
 
@@ -334,6 +375,15 @@ header .fa-bars {
   #home {
     padding-top: 10em;
     justify-content: center;
+    border-bottom: 10px solid black;
+  }
+  .images {
+    display: none;
+  }
+  #album h2 {
+    justify-content: center;
+    font-size: 3em;
+    padding: 0;
   }
 }
 
@@ -354,6 +404,34 @@ header .fa-bars {
   
   #home p {
     font-size: 3em;
+  }
+  #album h2 {
+    font-size: 2em;
+  }
+  #album h2 {
+    font-size: 2em;
+    height: 100px;
+  }
+  .album-info {
+    height: calc(100vh - 100px);
+  }
+  #album .card img {
+    width: 200px;
+    margin-bottom: 2em;
+  }
+  #album .card button {
+    font-size: 1.2em;
+    height: 2em;
+  }
+  .album-track {
+    padding: 0;
+    text-align: center;
+  }
+  .album-track h3 {
+    font-size: 1.5em;
+  }
+  .album-track ul li {
+    font-size: 1em;
   }
 }
 
@@ -378,5 +456,9 @@ header .fa-bars {
   
   #home p {
     font-size: 3em;
+  }
+  .album-track {
+    width: 100%;
+    border-radius: 0;
   }
 }
