@@ -13,7 +13,7 @@ const upArrow = () => {
   const upButton = document.getElementById('home-arrow');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY > window.innerHeight && window.innerWidth > 768) {
       upButton.style.display = 'block';
     } else {
       upButton.style.display = 'none';
