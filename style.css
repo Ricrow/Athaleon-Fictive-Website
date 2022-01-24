@@ -313,10 +313,25 @@ header .fa-bars {
   color: white;
 }
 
-#footer p {
+
+#footer .footer-text {
+  display: flex;
+  justify-content: center;
+}
+
+#footer .footer-text p {
   font-size: 1.2em;
   text-shadow: var(--text-shadow);
   text-align: center;
+  padding: 1em;
+}
+
+#footer .footer-text .p1 {
+  border-right: 1px solid var(--font-color);
+}
+
+#footer .footer-text .p2 {
+  border-left: 1px solid var(--font-color);
 }
 
 
@@ -396,6 +411,10 @@ header .fa-bars {
 /* max-width: 900px */
 
 @media (max-width: 900px) {
+  #album, #contact {
+    height: auto;
+    padding-bottom: 1em;
+  }
   header {
     height: 150px;
   }
@@ -510,12 +529,26 @@ header .fa-bars {
   #album h2 {
     font-size: 3em;
   }
+  .album-info {
+    height: 70%;
+  }
   .album-track {
     padding: 0;
+    font-size: 1em;
     text-align: center;
   }
   #contact form{
     width: 90%;
+  }
+  #footer .icons a{
+    font-size: 1.8em;
+    margin: 1em;
+  }
+  #footer .footer-text {
+    flex-direction: column;
+  }
+  #footer .footer-text .p1, #footer .footer-text .p2 {
+    border: none;
   }
 }
 
@@ -601,6 +634,14 @@ header .fa-bars {
     border-radius: 0;
   }
   #footer {
-    height: 100px;
+    height: auto;
+    padding-top: 1em;
+  }
+  #footer .icons a{
+    font-size: 1.5em;
+    margin: 0.5em;
+  }
+  #footer .footer-text p {
+    font-size: 0.8em;
   }
 }
