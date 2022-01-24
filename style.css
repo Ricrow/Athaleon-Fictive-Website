@@ -166,6 +166,7 @@ header .fa-bars {
 .images .image {
   height: auto;
   width: calc(100% / 9);
+  filter: grayscale(100%);
 }
 
 /* ALBUM SECTION */
