@@ -509,6 +509,9 @@ header .fa-bars {
     width: 400px;
     margin-bottom: 2em;
   }
+  #tour table {
+    width: 95%;
+  }
 }
 
 /* max-width: 768px */
@@ -598,7 +601,7 @@ header .fa-bars {
 /* max-width: 565px */
 
 @media (max-width: 565px) {
-  header a .logo {
+  header a .logo, #tour a .logo {
     width: 300px;
   }
   #home .video-container {
@@ -647,6 +650,17 @@ header .fa-bars {
   #contact form textarea {
     resize: none;
     height: 200px;
+  }
+  #tour h1 {
+    font-size: 2em;
+  }
+  #tour table {
+    font-size: 1.2em;
+    width: 95%;
+  }
+  #tour table .date {
+    width: 50px;
+    padding-right: 1em;
   }
 }
 
