@@ -58,11 +58,23 @@ body {
   display: none;
 }
 
+a {
+  font-style: italic;
+  color: var(--link-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: #fff;
+}
+
 /* VARIABLES */
 
 :root {
   --font-color: #D3B69C;
   --text-shadow: 0px 0px 2px #000000, 0px 0px 4px #000000, 0px 0px 6px #000000;
+  --link-color: #af8561;
 }
 
 /* HEADER */
@@ -217,17 +229,6 @@ header .fa-bars {
   padding-bottom: 1em;
 }
 
-.album-track ul li a {
-  font-style: italic;
-  color: #af8561;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.album-track ul li a:hover {
-  color: #fff;
-}
-
 /* CONTACT */
 
 #contact {
@@ -342,6 +343,39 @@ header .fa-bars {
   min-height: 100vh;
   background: linear-gradient(90deg, black, rgb(43, 33, 30), black);
   color: var(--font-color);
+  text-shadow: var(--text-shadow);
+}
+
+#tour .logo-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#tour a .logo {
+  width: 500px;
+}
+
+#tour h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+}
+
+#tour table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#tour table tbody td{
+  border-bottom: 1px solid var(--font-color);
+  padding-bottom: 1.5em;
+  padding-top: 0.5em;
+  margin: 0;
 }
 
 
