@@ -1,3 +1,6 @@
+
+/* GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ body {
   position: relative;
 }
 
-#home, #album {
+#home, #album, #contact {
   width: 100%;
   height: 100vh;
   background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(43,33,30,0.7) 50%, rgba(0,0,0,0.8) 100%), url(images/steampunk-city.jpg);
@@ -220,6 +223,11 @@ header .fa-bars {
   color: #fff;
 }
 
+/* CONTACT */
+
+#contact {
+
+}
 
 
 
@@ -387,6 +395,9 @@ header .fa-bars {
   #home {
     padding-top: 10em;
     justify-content: center;
+  }
+
+  #home, #album {
     border-bottom: 10px solid black;
   }
   .images {
