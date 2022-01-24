@@ -335,6 +335,14 @@ header .fa-bars {
   border-left: 1px solid var(--font-color);
 }
 
+/* TOUR */
+
+#tour {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, black, rgb(43, 33, 30), black);
+  color: var(--font-color);
+}
 
 
 
