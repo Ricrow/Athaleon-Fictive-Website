@@ -409,6 +409,7 @@ header .fa-bars {
 /* max-width: 1362px */
 
 @media (max-width: 1362px) {
+  /*ALBUM*/
   .album-track h3 {
     font-size: 3em;
     padding-bottom: 1.5em;
@@ -422,9 +423,11 @@ header .fa-bars {
 /* max-width: 1200px */
 
 @media (max-width: 1200px) {
+  /*NAV*/
   .navbar .nav-item {
     font-size: 1.2em;
   }
+  /*HOME*/
   #home .video-container {
     width: 70%;
     height: 40%;
@@ -436,6 +439,7 @@ header .fa-bars {
   #home p {
     font-size: 3.2em;
   }
+  /*ALBUM*/
   .album-track h3 {
     font-size: 2em;
   }
@@ -446,6 +450,7 @@ header .fa-bars {
   #album h2 {
     font-size: 4em;
   }
+  /*CONTACT*/
   #contact form{
     width: 70%;
   }
@@ -454,19 +459,18 @@ header .fa-bars {
 /* max-width: 900px */
 
 @media (max-width: 900px) {
-  #album, #contact {
-    height: auto;
-    padding-bottom: 1em;
-  }
+  /*HEADER*/
   header {
     height: 150px;
   }
   header a .logo {
     width: 400px;
   }
+  /*NAV*/
   .navbar .nav-item {
     font-size: 1em;
   }
+  /*HOME*/
   #home .video-container {
     width: 95%;
     height: 50%;
@@ -481,6 +485,11 @@ header .fa-bars {
   }
   #home {
     padding-top: 5em;
+  }
+  /*ALBUM*/
+  #album, #contact {
+    height: auto;
+    padding-bottom: 1em;
   }
   #album h2, #contact h4 {
     justify-content: center;
@@ -509,6 +518,7 @@ header .fa-bars {
     width: 400px;
     margin-bottom: 2em;
   }
+  /*TOUR*/
   #tour table {
     width: 95%;
   }
@@ -517,6 +527,7 @@ header .fa-bars {
 /* max-width: 768px */
 
 @media (max-width: 768px) {
+  /*HEADER*/
   header {
     height: 150px;
     position: fixed;
@@ -528,6 +539,7 @@ header .fa-bars {
   header .fa-bars {
     display: block;
   }
+  /*NAV*/
   #nav {
     padding-top: 1em;
     width: 100%;
@@ -550,6 +562,7 @@ header .fa-bars {
   .navbar-active {
     transform: translateX(-100%);
   }
+  /*HOME*/
   #home .video-container {
     height: 40%;
   }
@@ -569,9 +582,11 @@ header .fa-bars {
   #home, #album {
     border-bottom: 10px solid black;
   }
+  /*INTERSECTION*/
   .images {
     display: none;
   }
+  /*ALBUM*/
   #album h2 {
     font-size: 3em;
   }
@@ -583,9 +598,11 @@ header .fa-bars {
     font-size: 1em;
     text-align: center;
   }
+  /*CONTACT*/
   #contact form{
     width: 90%;
   }
+  /*FOOTER*/
   #footer .icons a{
     font-size: 1.8em;
     margin: 1em;
@@ -601,9 +618,11 @@ header .fa-bars {
 /* max-width: 565px */
 
 @media (max-width: 565px) {
+  /*HEADER*/
   header a .logo, #tour a .logo {
     width: 300px;
   }
+  /*HOME*/
   #home .video-container {
     width: 95%;
     height: 50%;
@@ -616,6 +635,7 @@ header .fa-bars {
   #home p {
     font-size: 3em;
   }
+  /*ALBUM*/
   #album h2 {
     font-size: 2em;
   }
@@ -640,6 +660,7 @@ header .fa-bars {
   .album-track ul li {
     font-size: 1em;
   }
+  /*CONTACT*/
   #contact h4 {
     font-size: 3em;
   }
@@ -651,6 +672,7 @@ header .fa-bars {
     resize: none;
     height: 200px;
   }
+  /*TOUR*/
   #tour h1 {
     font-size: 2em;
   }
@@ -667,6 +689,7 @@ header .fa-bars {
 /* max-width: 420px */
 
 @media (max-width: 420px) {
+  /*HEADER*/
   header {
     justify-content: left;
   }
@@ -674,6 +697,7 @@ header .fa-bars {
     margin-left: 50px;
     width: 220px;
   }
+  /*HOME*/
   #home .video-container {
     width: 95%;
     height: 40%;
@@ -686,10 +710,12 @@ header .fa-bars {
   #home p {
     font-size: 3em;
   }
+  /*ALBUM*/
   .album-track {
     width: 100%;
     border-radius: 0;
   }
+  /*FOOTER*/
   #footer {
     height: auto;
     padding-top: 1em;
